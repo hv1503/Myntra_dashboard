@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Trend Analysis - Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles_dashboard.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <img src="myntralogo1.webp" alt="Myntra Logo" class="logo">
+            </div>
+            <nav class="sidebar-nav">
+                <a href="index.html"><i class="fas fa-home"></i> Home</a>
+                <a href="dashboard.html" class="active"><i class="fas fa-tachometer-alt"></i> Dashboard</a>
+                <a href="products.html"><i class="fas fa-box"></i> Products</a>
+                <a href="messages.html"><i class="fas fa-envelope"></i> Messages</a>
+                <a href="settings.html"><i class="fas fa-cog"></i> Settings</a>
+            </nav>
+            <div class="sidebar-footer">
+                <button class="upgrade-btn">Upgrade Now</button>
+            </div>
+        </aside>
+        <main class="main-content">
+            <header class="header">
+                <div class="header-left">
+                    <input type="text" placeholder="Search for products, transactions, etc...">
+                </div>
+                <div class="header-right">
+                    <span>Hi, Host!</span>
+                    <img src="https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d" alt="Profile Image">
+                </div>
+            </header>
+            <section class="content">
+                <div id="charts" class="charts">
+                    <!-- Forecasted graphs will be placed here -->
+                </div>
+                <div class="images-section">
+                    <div class="image-item">
+                        <h3>Training Set vs Testing Set</h3>
+                        <img src="WhatsApp Image 2024-07-15 at 10.40.20 PM.jpeg" alt="Training Set & Testing Set">
+                    </div>
+                    <div class="image-item">
+                        <h3>Feature Importance</h3>
+                        <img src="WhatsApp Image 2024-07-15 at 10.32.51 PM.jpeg" alt="Feature Importance">
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

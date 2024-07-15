@@ -1,0 +1,236 @@
+/* General styling */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    line-height: 1.6;
+}
+
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+.sidebar {
+    background-color: #333;
+    color: #fff;
+    width: 250px;
+    padding: 20px;
+    box-sizing: border-box;
+    position: fixed; /* Keep sidebar fixed */
+    height: 100%;
+    overflow-y: auto; /* Ensure sidebar scrolls if content overflows */
+}
+
+.sidebar-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 80%;
+}
+
+.sidebar-nav {
+    margin-bottom: 20px;
+}
+
+.sidebar-nav a {
+    display: block;
+    padding: 15px; /* Increase padding for better spacing */
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold; /* Make text bold */
+    border-radius: 5px; /* Add rounded corners */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+}
+
+.sidebar-nav a.active, .sidebar-nav a:hover {
+    background-color: #555; /* Slightly lighter color for active/hover state */
+    color: #fff; /* Ensure text color remains white */
+}
+
+.sidebar-footer {
+    margin-top: auto;
+    text-align: center;
+}
+
+.upgrade-btn {
+    background-color: #f44336;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold; /* Make text bold */
+    border-radius: 5px; /* Add rounded corners */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.upgrade-btn:hover {
+    background-color: #d32f2f;
+}
+
+.main-content {
+    margin-left: 250px; /* Leave space for sidebar */
+    padding: 20px;
+    flex: 1;
+}
+
+/* Header styling */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.header-left {
+    flex: 1;
+}
+
+.header-left input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+}
+
+.header-right span {
+    margin-right: 10px;
+    font-size: 14px;
+    color: #666;
+}
+
+.header-right img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+/* Content styling */
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.welcome-banner {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.welcome-banner h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.welcome-banner p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.welcome-banner button {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px; /* Add rounded corners */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.welcome-banner button:hover {
+    background-color: #45a049;
+}
+
+.statistics {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.stat-card {
+    text-align: center;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    flex: 1;
+    margin-right: 10px;
+}
+
+.stat-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.stat-card p {
+    font-size: 24px;
+    color: #333;
+    font-weight: bold;
+}
+
+.images-section {
+    margin-bottom: 40px;
+}
+
+.images-section h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.images-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.images-container img {
+    width: calc(25% - 10px);
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        order: 2;
+    }
+
+    .main-content {
+        order: 1;
+        padding: 10px;
+    }
+
+    .statistics {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .stat-card {
+        margin-bottom: 20px;
+    }
+
+    .images-container img {
+        width: 100%;
+        margin-right: 0;
+    }
+}

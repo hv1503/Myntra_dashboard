@@ -1,0 +1,158 @@
+/* General Styling */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5; /* Light grey background */
+    color: #333; /* Dark grey text color for readability */
+    line-height: 1.6;
+}
+
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Sidebar Styling */
+.sidebar {
+    background-color: #4A4A4A; /* Darker color for sidebar */
+    color: #ecf0f1; /* Light text color */
+    width: 250px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.sidebar-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 80%;
+}
+
+.sidebar-nav {
+    margin-bottom: 20px;
+}
+
+.sidebar-nav a {
+    display: block;
+    padding: 10px;
+    color: #ecf0f1; /* Light text color for links */
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.sidebar-nav a.active {
+    background-color: #34495e; /* Slightly lighter color for active link */
+    border-radius: 4px;
+}
+
+.sidebar-footer {
+    margin-top: auto;
+    text-align: center;
+}
+
+.upgrade-btn {
+    background-color: #e74c3c; /* Red color for the button */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.upgrade-btn:hover {
+    background-color: #c0392b; /* Darker red on hover */
+}
+
+/* Main Content Styling */
+.main-content {
+    flex: 1;
+    padding: 20px;
+    background-color: #fff; /* White background for content area */
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.header-left input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+}
+
+.header-right span {
+    margin-right: 10px;
+    color: #555; /* Slightly lighter text color */
+}
+
+.header-right img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+/* Product Details Section */
+.product-details {
+    text-align: center;
+}
+
+.product-details h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333; /* Dark grey text color */
+}
+
+.product-image {
+    margin: 0 auto;
+    width: 80%;
+    max-width: 600px; /* Limit max width */
+}
+
+.product-image img {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    border: 2px solid #ddd; /* Light border around the image */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-description {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #666; /* Slightly lighter text color */
+    line-height: 1.8;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        order: 2;
+    }
+
+    .main-content {
+        order: 1;
+        padding: 10px;
+    }
+
+    .product-image {
+        width: 100%;
+    }
+}

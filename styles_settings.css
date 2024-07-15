@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #F8F8F8;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    background-color: #4A4A4A;
+    width: 250px;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sidebar-header {
+    padding: 20px;
+    text-align: center;
+    background-color: #6D6D6D;
+}
+
+.sidebar-header .logo {
+    width: 120px;
+    height: auto;
+}
+
+.sidebar-nav {
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-nav a {
+    padding: 15px 20px;
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.sidebar-nav a.active, .sidebar-nav a:hover {
+    background-color: #888888;
+}
+
+.sidebar-footer {
+    padding: 20px;
+    text-align: center;
+}
+
+.upgrade-btn {
+    background-color: #FF6F61;
+    border: none;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.upgrade-btn:hover {
+    background-color: #FF3B30;
+}
+
+.main-content {
+    flex: 1;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #EFEFEF;
+    border-bottom: 1px solid #CCCCCC;
+}
+
+.header-left input {
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+}
+
+.header-right span {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.header-right img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.content {
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.settings {
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.settings h3 {
+    margin-bottom: 20px;
+    color: #333333;
+}
+
+.settings-section {
+    margin-bottom: 20px;
+}
+
+.settings-section h4 {
+    margin-bottom: 10px;
+    color: #FF6F61;
+}
+
+.settings-item {
+    margin-bottom: 10px;
+}
+
+.settings-item label {
+    display: block;
+    margin-bottom: 5px;
+    color: #666666;
+}
+
+.settings-item input, .settings-item button {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+}
+
+.settings-item button {
+    background-color: #FF6F61;
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.settings-item button:hover {
+    background-color: #FF3B30;
+}

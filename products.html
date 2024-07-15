@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Trend Analysis - Products</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles_products.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <img src="myntralogo1.webp" alt="Myntra Logo" class="logo">
+            </div>
+            <nav class="sidebar-nav">
+                <a href="index.html"><i class="fas fa-home"></i> Home</a>
+                <a href="dashboard.html"><i class="fas fa-tachometer-alt"></i> Dashboard</a>
+                <a href="products.html" class="active"><i class="fas fa-box"></i> Products</a>
+                <a href="messages.html"><i class="fas fa-envelope"></i> Messages</a>
+                <a href="settings.html"><i class="fas fa-cog"></i> Settings</a>
+            </nav>
+            <div class="sidebar-footer">
+                <button class="upgrade-btn">Upgrade Now</button>
+            </div>
+        </aside>
+        <main class="main-content">
+            <header class="header">
+                <div class="header-left">
+                    <input type="text" placeholder="Search for products, transactions, etc...">
+                </div>
+                <div class="header-right">
+                    <span>Hi, Host!</span>
+                    <img src="https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d" alt="Profile Image">
+                </div>
+            </header>
+            <section class="content">
+                <div class="product-details">
+                    <h3>Product Details</h3>
+                    <div class="product-image">
+                        <img src="product_img.png" alt="Product Details">
+                    </div>
+                    <p class="product-description">
+                        Here you can provide a detailed description of the product, including its features, specifications, and other relevant information.
+                    </p>
+                </div>
+                <div class="powerbi-report">
+                    <h3>Sales Data Report</h3>
+                    <!-- Embed Power BI Report -->
+                    <iframe width="100%" height="600px" src="MyntraPlots.pbix" frameborder="0" allowFullScreen="true"></iframe>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
